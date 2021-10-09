@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 7px;
+        }
+        /* */
+        .nome, .telefone {
+            background-color: aqua;
+        }
+        .email, .cargo {
+            background-color: aquamarine;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Tabelas</h1>
+
+    <table>
+        <caption>Cadstro de Clientes</caption>
+        <colgroup>
+        <col class="nome">
+        <col class="email">
+        <col class="telefone">
+        <col class="cargo">
+        </colgroup>
+        
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Telefone</th>
+                <th>Cargo</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Fulano</td>
+                <td>fulano@gmail.com</td>
+                <td>12345678</td>
+                <td rowspan="2">Dev</td>
+            </tr>
+            <tr>
+                <td>Ciclano</td>
+                <td>ciclano@gmail.com</td>
+                <td>21345678</td>
+            </tr>    
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="4">
+                    Total: 2
+                </td>
+            </tr>
+        </tfoot>
+
+    </table>
+</body>
+</html>
